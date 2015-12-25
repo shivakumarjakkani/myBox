@@ -3,17 +3,42 @@
 	padding:0;	
 }
 
-
+header nav section article footer hgroup {
+    display:block;
+}
 body {
-	backgroud-color: black;
+    display:block;
+	background-color: #FFFFFF;
 	width: 100%;
-	margin:0;
-	padding:0;
 }
 
-.section {
+header.logo {
+    color : white;
 	width:100%;
 	text-align: center;
-	border: 1px solid blue;
-	margin: 0 auto;
+	border-bottom: 3px solid #383838;
+	background-color:#333e41;
+	margin: 1px auto;
+	font-family: Tahoma;
+	padding: 1px auto;
+}
+
+header.logo h1 {
+    font-size: 250%;  
+}
+header.logo h5 {
+    font-size: 75%;
+}
+#login-form {
+    width : 30%;
+    height: 500px;
+    margin: 30px auto;
+    border: 3px solid #383838;
+    color : white;
+    text-align : center;         
+}
+input {
+    display : block;
+    clear : right;
+    margin : 0 auto;
 }
