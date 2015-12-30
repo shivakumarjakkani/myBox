@@ -7,20 +7,31 @@
     </head>
     <body>
 		<header class="logo">
-			<h1>myBox</h1>
+			<h1><span>myBox</span></h1>
 			<h5>MY DATA - MY RUELS</h5>
 		</header>
 		
 		<!-- Login form -->
-		<section id="login-form">
-		    <form action="">
-		        <div id="fields">
-			        <p> Welcome to myBox Loign </p>
-		    		<input type="text" value="USER NAME" name="uname">
-		    		<input type="password" value="PASS WORD" name="pword">
-		    		<input type="submit" value="VALIDATE" name="login">
-	    		</div>
-		    </form>
-		</section>
-    <body>
+		<div class="outer">
+		   <div class="inner">
+   	         <div class="group hgroup">
+	            <h4>Welcome to myBox Loign</h4>
+	            <h5>- Setup admin acc -</h5>
+	         </div>
+	   	     <form action="index.php" method="post">
+		        <div class="group input-form">
+		           <div class="input-icon user-icon"></div>
+		           <input type="text" placeholder="USER NAME" name="uname">
+		        </div>
+		        <div class="group input-form">
+		           <div class="input-icon pass-icon"></div>
+		           <input type="password" placeholder="PASS WORD" name="pword">
+		        </div>
+		        <div class="group input-form btn" id="btn">
+		        	<input type="submit" value="CREATE" name="submit">
+		        </div>	    			    		
+	          </form> 
+	       </div>
+		</div>
+    </body>
 </html>
