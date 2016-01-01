@@ -1,7 +1,7 @@
 <?php
 /**
 ****************************************************************************************
-* FileName    : index.php                                                              *   
+* FileName    : header.php                                                             *   
 * Creation    : Dec 31, 2015                                                           *
 * Author      : Shiva Kumar Jakkani <shivakumarjakkani@gmail.com>                      *      
 * Description : Contains the header template for the myBox                             *
@@ -21,9 +21,19 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>                 *
 ****************************************************************************************                  
  **/
-$adminStr = " -Setup Admin Acc- ";
-$user = "ADMIN NAME";
-require_once 'templates/header.php';
-require_once 'templates/login.php';
-require_once 'templates/footer.php';
-?>
+print <<<_HEADER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="test/css" href="css/main.css">
+    <title>myBox</title>
+</head>
+<body>
+	<header class="logo">
+		<h1>myBox</h1>
+		<h5>MY DATA - MY RUELS</h5>
+	</header>
+_HEADER;
+?>   
